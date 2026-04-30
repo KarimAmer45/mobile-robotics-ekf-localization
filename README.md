@@ -6,9 +6,9 @@ Extended Kalman Filter localization with odometry prediction and range-bearing l
 
 ```bash
 python - <<'PY'
-import ex5
+import mobile_robotics_ekf_localization as ekf_localization
 
-mu, covariance, last_control = ex5.run_ekf_localization(plot=False, step_size=100, last_step=400)
+mu, covariance, last_control = ekf_localization.run_ekf_localization(plot=False, step_size=100, last_step=400)
 print("mu:", mu)
 print("covariance diagonal:", covariance.diagonal())
 PY
