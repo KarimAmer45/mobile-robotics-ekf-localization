@@ -13,3 +13,24 @@ print("mu:", mu)
 print("covariance diagonal:", covariance.diagonal())
 PY
 ```
+
+## Result screenshots
+
+![mobile-robotics-ekf-localization result screenshot](docs/results/result-screenshot.png)
+
+Final EKF pose estimate with a covariance ellipse from the bundled landmark dataset.
+
+
+## What this demonstrates
+
+- Odometry prediction and range-bearing landmark correction in an EKF loop.
+- Handling of sensor cadence mismatch and simulated observation failures.
+- Uncertainty tracking through covariance propagation and correction.
+
+
+## Limitations and next steps
+
+- The implementation assumes known landmark correspondences.
+- The current README focuses on a short offline run rather than long-run metrics.
+- Next steps: add NEES/RMSE plots and compare against particle-filter localization.
+
